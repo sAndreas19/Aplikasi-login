@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+body {
+    background-image: url('../images/Background1.jpg');
+}
+
+.headh1 {
+    font-size: 32px;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    white-space: "nowrap";
+    color: white;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #f1dede, #ffffff, #c7c7c7);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.btn-log {
+    border: 1px solid white;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    padding: 32px;
+}
+
+section .head {
+    display: block;
+    margin: 0 auto 16px auto;
+    width: 100%;
+    max-width: 376px;
+    font-size: 34px;
+    font-weight: 900;
+    overflow: auto;
+    margin-left: 25vw;
+}
+
+.login-input {
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow: auto;
+    border: solid 2px white;
+    backdrop-filter: blur(10px);
+}
+
+.login-input input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #a0a0a0;
+    border-radius: 8px;
+    color: black;
+}
+
+.login-input button {
+    margin-top: 32px;
+    padding: 8px 32px;
+    background-color: #212936;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+}
+
+.login-input button.regist {
+    margin-right: 12px;
+    background-color: #820d05;
+}
+
+.pop-up-modal {
+    position: fixed;
+    padding: 8px 32px;
+    background-color: #000000;
+    color: white;
+    bottom: -100px;
+    opacity: 0;
+    text-transform: capitalize;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: bottom ease-in-out 0.3s, opacity ease-in-out 0.3s;
+}
+
+.pop-up-modal h2 {
+    padding: 6px;
+}
+
+.pop-up-modal p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.pop-up-modal.display {
+    bottom: 32px;
+    opacity: 1;
+}
+
+@media (max-width: 435px) {
+    main .head {
+        font-size: 26px;
+    }
+}
